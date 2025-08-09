@@ -1,8 +1,6 @@
 <?php
+session_start();
 include 'koneksi.php';
-
-// jika email dan password terisi maka 
-// tampilkan atau pilih 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
@@ -13,15 +11,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (mysqli_num_rows($query) == 1) {
         $row = mysqli_fetch_assoc($query);
         if ($password == $row['password']) {
-            echo "Login Berhasil";
-            die;
+            $_SESSION['ID_USER'] = $row['id'];
+            $_SESSION['NAME'] = $row['name'];
+            header("location:home.php");
         } else {
-            echo "password salah";
-            die;
+            header("location:index.php?error=password");
         }
     } else {
-        echo "email salah";
-        die;
+        header("location:index.php?error=email");
     }
 }
 
@@ -92,6 +89,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
                                         <p class="text-center small">Enter your email & password to login</p>
                                     </div>
+
+                                    <?php
+                                    if (isset($_GET['error'])) {
+                                        if ($_GET['error'] == 'password') {
+                                            echo '<div class="alert alert-danger">Password Salah</div>';
+                                        } elseif ($_GET['error'] == 'email') {
+                                            echo '<div class="alert alert-danger">Email tidak ditemukan</div>';
+                                        }
+                                    }
+                                    ?>
 
                                     <form method="post" class="row g-3 needs-validation" novalidate>
 
