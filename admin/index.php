@@ -1,3 +1,32 @@
+<?php
+include 'koneksi.php';
+
+// jika email dan password terisi maka 
+// tampilkan atau pilih 
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $query = mysqli_query($koneksi, "SELECT * FROM user WHERE email = '$email'");
+    // JIKA EMAILNYa bernilai atau ada
+    if (mysqli_num_rows($query) == 1) {
+        $row = mysqli_fetch_assoc($query);
+        if ($password == $row['password']) {
+            echo "Login Berhasil";
+            die;
+        } else {
+            echo "password salah";
+            die;
+        }
+    } else {
+        echo "email salah";
+        die;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +34,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+    <title>Login Form</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -51,7 +80,7 @@
                             <div class="d-flex justify-content-center py-4">
                                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                                     <img src="assets/img/logo.png" alt="">
-                                    <span class="d-none d-lg-block">NiceAdmin</span>
+                                    <span class="d-none d-lg-block">Login Admin</span>
                                 </a>
                             </div><!-- End Logo -->
 
@@ -61,17 +90,17 @@
 
                                     <div class="pt-4 pb-2">
                                         <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
-                                        <p class="text-center small">Enter your username & password to login</p>
+                                        <p class="text-center small">Enter your email & password to login</p>
                                     </div>
 
-                                    <form class="row g-3 needs-validation" novalidate>
+                                    <form method="post" class="row g-3 needs-validation" novalidate>
 
                                         <div class="col-12">
-                                            <label for="yourUsername" class="form-label">Username</label>
+                                            <label for="yourEmail" class="form-label">Email</label>
                                             <div class="input-group has-validation">
                                                 <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                <input type="text" name="username" class="form-control" id="yourUsername" required>
-                                                <div class="invalid-feedback">Please enter your username.</div>
+                                                <input type="email" name="email" class="form-control" id="yourEmail" required>
+                                                <div class="invalid-feedback">Please enter your email.</div>
                                             </div>
                                         </div>
 
