@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $row = mysqli_fetch_assoc($query);
         if ($password == $row['password']) {
             $_SESSION['ID_USER'] = $row['id'];
-            $_SESSION['NAME'] = $row['name'];
+            $_SESSION['NAME'] = $row['username'];
             header("location:home.php");
         } else {
             header("location:index.php?error=password");
