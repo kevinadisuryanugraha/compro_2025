@@ -1,5 +1,11 @@
 <?php
 session_start();
+ob_start();
+include 'koneksi.php';
+
+if (empty($_SESSION['ID_USER'])) {
+    header("Location: index.php?access=failed");
+}
 ?>
 
 <!DOCTYPE html>
@@ -35,43 +41,17 @@ session_start();
     <!-- End Sidebar-->
 
     <main id="main" class="main">
-
-        <div class="pagetitle">
-            <h1>Blank Page</h1>
-            <nav>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item">Pages</li>
-                    <li class="breadcrumb-item active">Blank</li>
-                </ol>
-            </nav>
-        </div><!-- End Page Title -->
-
-        <section class="section">
-            <div class="row">
-                <div class="col-lg-6">
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Example Card</h5>
-                            <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Example Card</h5>
-                            <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        <?php
+        if (isset($_GET['page'])) {
+            if (file_exists('content/' . $_GET['page'] . ".php")) {
+                include 'content/' . $_GET['page'] . '.php';
+            } else {
+                include 'content/notfound.php';
+            }
+        } else {
+            include 'content/dashboard.php';
+        }
+        ?>
 
     </main><!-- End #main -->
 
