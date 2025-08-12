@@ -26,18 +26,26 @@ if (isset($_POST['simpan'])) {
     // jika gambar terupload
     if (!empty($_FILES['image']['name'])) {
         $image = $_FILES['image']['name'];
-        $path = "uploads/";
+        $tmp_name = $_FILES['image']['tmp_name'];
+        $type = mime_content_type($tmp_name);
 
+        $ext_allowed = ["image/png", "image/jpg", "image/jpeg"];
+
+        if (!in_array($type, $ext_allowed)) {
+            echo "Extensi file tidak diizinkan";
+            exit;
+        }
+
+        $path = "uploads/";
         if (!is_dir($path)) mkdir($path);
 
-        $image_name = md5($image);
+        $image_name = md5($image) . "." . pathinfo($image, PATHINFO_EXTENSION);
         $target_files = $path . $image_name;
 
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $target_files)) {
-            // jika gambarnya ada maka gambar sebelumnya akan diganti oleh gambar baru
-            if (!empty($row['image'])) {
-                unlink($path . $row['image']);
-            }
+        if (move_uploaded_file($tmp_name, $target_files)) {
+            echo "Upload berhasil";
+        } else {
+            echo "Upload gagal";
         }
     }
 
@@ -48,9 +56,9 @@ if (isset($_POST['simpan'])) {
             header("location:?page=slider&ubah=berhasil");
         }
     } else {
-        $insert = mysqli_query($koneksi, "INSERT INTO sliders (title, description, image) VALUES ('$title', '$description', '$image')");
+        $insert = mysqli_query($koneksi, "INSERT INTO sliders (title, description, image) VALUES ('$title', '$description', '$image_name')");
         if ($insert) {
-            header("location:?page=slidertambah=berhasil");
+            header("location:?page=slider&tambah=berhasil");
         }
     }
 }
@@ -93,7 +101,7 @@ if (isset($_POST['simpan'])) {
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-primary" type="submit" name="simpan">Simpan</button>
-                            <a href="?page=user" class="btn btn-secondary" onclick="history.back()">
+                            <a href="?page=slider" class="btn btn-secondary" onclick="history.back()">
                                 ← Kembali
                             </a>
                         </div>
