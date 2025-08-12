@@ -1,5 +1,9 @@
 <?php
 // jika data setting sudah ada maka update data tersebut
+
+$querySetting = mysqli_query($koneksi, "SELECT * FROM settings LIMIT 1");
+$row = mysqli_fetch_assoc($querySetting);
+
 if (isset($_POST['simpan'])) {
     $email = $_POST['email'];
     $phone = $_POST['phone'];
@@ -9,13 +13,29 @@ if (isset($_POST['simpan'])) {
     $twitter = $_POST['twitter'];
     $linkedin = $_POST['linkedin'];
 
-    $querySetting = mysqli_query($koneksi, "SELECT * FROM settings LIMIT 1");
-    if (mysqli_num_rows($querySetting) > 0) {
+    // jika gambar terupload
+    if (!empty($_FILES['logo']['name'])) {
+        $logo = $_FILES['logo']['name'];
+        $path = "uploads/";
 
-        $row = mysqli_fetch_assoc($querySetting);
+        if (!is_dir($path)) mkdir($path);
+
+        $logo_name = md5($logo);
+        $target_files = $path . $logo_name;
+
+        if (move_uploaded_file($_FILES['logo']['tmp_name'], $target_files)) {
+            // jika gambarnya ada maka gambar sebelumnya akan diganti oleh gambar baru
+            if (!empty($row['logo'])) {
+                unlink($path . $row['logo']);
+            }
+        }
+    }
+
+    if ($row) {
+        // update
         $id_setting = $row['id'];
 
-        $update = mysqli_query($koneksi, "UPDATE settings SET email = '$email', phone = '$phone', alamat = '$alamat', instagram = '$instagram', facebook = '$facebook', twitter = '$twitter', linkedin = '$linkedin', logo = '$logo' WHERE id = '$id_setting'");
+        $update = mysqli_query($koneksi, "UPDATE settings SET email = '$email', phone = '$phone', alamat = '$alamat', instagram = '$instagram', facebook = '$facebook', twitter = '$twitter', linkedin = '$linkedin', logo = '$logo_name' WHERE id = '$id_setting'");
         if ($update) {
             header("location:?page=setting&ubah=berhasil");
         }
@@ -27,8 +47,6 @@ if (isset($_POST['simpan'])) {
     }
 }
 
-$querySetting = mysqli_query($koneksi, "SELECT * FROM settings LIMIT 1");
-$row = mysqli_fetch_assoc($querySetting);
 ?>
 
 <div class="pagetitle">
@@ -58,7 +76,7 @@ $row = mysqli_fetch_assoc($querySetting);
                                 <label for="" class="form-label fw-bold">Phone</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="number" name="phone" id="phone" class="form-control" placeholder="Masukkan telepon Anda" value="<?php echo isset($row['phoene']) ? $row['phoene'] : '' ?>">
+                                <input type="number" name="phone" id="phone" class="form-control" placeholder="Masukkan telepon Anda" value="<?php echo isset($row['phone']) ? $row['phone'] : '' ?>">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -66,7 +84,7 @@ $row = mysqli_fetch_assoc($querySetting);
                                 <label for="" class="form-label fw-bold">Alamat</label>
                             </div>
                             <div class="col-sm-10">
-                                <textarea class="form-control" placeholder="Masukkan Alamat Anda" id="floatingTextarea2" style="height: 100px"><?php echo isset($row['email']) ? $row['email'] : '' ?></textarea>
+                                <textarea name="alamat" class="form-control" placeholder="Masukkan Alamat Anda" id="floatingTextarea2" style="height: 100px"><?php echo isset($row['alamat']) ? $row['alamat'] : '' ?></textarea>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -107,6 +125,7 @@ $row = mysqli_fetch_assoc($querySetting);
                             </div>
                             <div class="col-sm-10">
                                 <input type="file" class="form-control" name="logo" id="inputGroupFile02">
+                                <img class="mt-2" src="uploads/<?php echo isset($row['logo']) ? $row['logo'] : '' ?>" alt="" width="100">
                             </div>
                         </div>
 
