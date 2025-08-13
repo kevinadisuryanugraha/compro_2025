@@ -15,13 +15,13 @@
             </a>
             <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="?page=slider">
-                        <i class="bi bi-circle"></i><span>Slider</span>
+                    <a href="?page=about">
+                        <i class="bi bi-circle"></i><span>About</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-accordion.html">
-                        <i class="bi bi-circle"></i><span>Accordion</span>
+                    <a href="?page=slider">
+                        <i class="bi bi-circle"></i><span>Slider</span>
                     </a>
                 </li>
                 <li>
