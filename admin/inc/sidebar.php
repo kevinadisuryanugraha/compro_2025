@@ -25,13 +25,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="components-badges.html">
-                        <i class="bi bi-circle"></i><span>Badges</span>
+                    <a href="?page=client">
+                        <i class="bi bi-circle"></i><span>Clients</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-breadcrumbs.html">
-                        <i class="bi bi-circle"></i><span>Breadcrumbs</span>
+                    <a href="?page=blog">
+                        <i class="bi bi-circle"></i><span>Blog</span>
                     </a>
                 </li>
                 <li>
