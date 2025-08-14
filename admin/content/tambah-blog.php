@@ -20,10 +20,12 @@ if (isset($_GET['delete'])) {
 }
 
 if (isset($_POST['simpan'])) {
-    $id_category = ['id_category'];
+    $id_category = $_POST['id_category'];
+    $id_category = (int)$id_category;
+
     $title = $_POST['title'];
     $content = $_POST['content'];
-    $penulis = $_SESSION['name'];
+    $penulis = $_SESSION['NAME'];
     $is_active = $_POST['is_active'];
     $tags = $_POST['tags'];
 
@@ -51,16 +53,37 @@ if (isset($_POST['simpan'])) {
         } else {
             echo "Upload gagal";
         }
+
+        $update_query = "UPDATE blogs 
+                     SET id_category = $id_category, 
+                         title = '$title', 
+                         content = '$content', 
+                         penulis = '$penulis', 
+                         tags = '$tags', 
+                         image = '$image_name', 
+                         is_active = '$is_active' 
+                     WHERE id = '$id'";
+    } else {
+        $update_query = "UPDATE blogs 
+                     SET id_category = $id_category, 
+                         title = '$title', 
+                         content = '$content', 
+                         penulis = '$penulis', 
+                         tags = '$tags', 
+                         is_active = '$is_active' 
+                     WHERE id = '$id'";
     }
 
     if ($id) {
         // ini query update
-        $update = mysqli_query($koneksi, query: "UPDATE blogs SET id_category = '$id_category', title = '$title', content = '$content', penulis = '$penulis', tags = '$tags', image = '$image_name', is_active = '$is_active' WHERE id = '$id'");
+        $update = mysqli_query($koneksi, $update_query);
         if ($update) {
             header("location:?page=blog&ubah=berhasil");
         }
     } else {
-        $insert = mysqli_query($koneksi, "INSERT INTO blogs (id_category, title, content, penulis, tags image, is_active) VALUES ('$id_category', '$title', '$content', '$penulis', '$tags', '$image_name', '$is_active')");
+        $insert_query = "INSERT INTO blogs (id_category, title, content, penulis, is_active, image, tags) 
+                     VALUES ($id_category, '$title', '$content', '$penulis', '$is_active', '$image_name', '$tags')";
+        $insert = mysqli_query($koneksi, $insert_query);
         if ($insert) {
             header("location:?page=blog&tambah=berhasil");
         }
@@ -97,10 +120,6 @@ $rowCategories = mysqli_fetch_all($queryCategories, MYSQLI_ASSOC);
                         <div class="mb-3">
                             <label for="title" class="form-label">Title</label>
                             <input type="text" class="form-control" id="title" name="title" placeholder="Masukkan Judul Anda" value="<?php echo ($id) ? $rowEdit['title'] : '' ?>" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="penulis" class="form-label">Penulis</label>
-                            <input type="text" class="form-control" id="penulis" name="penulis" placeholder="Penulis" value="<?php echo ($id) ? $rowEdit['penulis'] : '' ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="tags" class="form-label">Tags</label>
@@ -143,7 +162,7 @@ $rowCategories = mysqli_fetch_all($queryCategories, MYSQLI_ASSOC);
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-primary" type="submit" name="simpan">Simpan</button>
-                            <a href="?page=client" class="btn btn-secondary" onclick="history.back()">
+                            <a href="?page=blog" class="btn btn-secondary" onclick="history.back()">
                                 ← Kembali
                             </a>
                         </div>

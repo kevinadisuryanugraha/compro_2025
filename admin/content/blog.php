@@ -10,11 +10,11 @@ function changeIsActive($isActive)
 {
     switch ($isActive) {
         case '1':
-            $title = "<span class='badge' bg-primary>Publish</span>";
+            $title = "<span class='badge bg-primary'>Publish</span>";
             break;
 
         default:
-            $title = "<span class='badge' bg-warning>Draft</span>";
+            $title = "<span class='badge bg-warning'>Draft</span>";
             break;
     }
 
@@ -45,6 +45,8 @@ function changeIsActive($isActive)
                                 <th>Title</th>
                                 <th>Content</th>
                                 <th>Penulis</th>
+                                <th>Image</th>
+                                <th>Tags</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -53,9 +55,12 @@ function changeIsActive($isActive)
                             <?php foreach ($rows as $key => $row): ?>
                                 <tr>
                                     <td><?php echo $key += 1 ?></td>
-                                    <td><?php echo $row['title']; ?></td>
                                     <td><?php echo $row['name']; ?></td>
+                                    <td><?php echo $row['title']; ?></td>
+                                    <td><?php echo $row['content']; ?></td>
+                                    <td><?php echo isset($_SESSION['NAME']) ? $_SESSION['NAME'] : '' ?> </td>
                                     <td><img class="img-fluid w-25" src="uploads/<?php echo $row['image']; ?>" alt=""></td>
+                                    <td><?php echo $row['tags']; ?></td>
                                     <td><?php echo changeIsActive($row['is_active']) ?></td>
                                     <td>
                                         <a href="?page=tambah-blog&edit=<?php echo $row['id'] ?>" class="btn btn-sm btn-primary">Edit</a>
