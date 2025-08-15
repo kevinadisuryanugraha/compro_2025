@@ -15,6 +15,15 @@ $rowAbouts = mysqli_fetch_all($queryAbouts, MYSQLI_ASSOC);
 $queryClients = mysqli_query($koneksi, "SELECT * FROM client WHERE is_active ORDER BY id DESC");
 $rowClients = mysqli_fetch_all($queryClients, MYSQLI_ASSOC);
 
+$queryCards = mysqli_query($koneksi, "SELECT * FROM card_content ORDER BY id DESC");
+$rowCards = mysqli_fetch_all($queryCards, MYSQLI_ASSOC);
+
+// $queryBlogs = mysqli_query($koneksi, "SELECT * FROM blogs WHERE is_active ORDER BY id DESC");
+$queryBlogs = mysqli_query($koneksi, "SELECT categories.name, blogs.* FROM blogs 
+JOIN categories ON categories.id = blogs.id_category 
+ORDER BY blogs.id DESC");
+$rowBlogs = mysqli_fetch_all($queryBlogs, MYSQLI_ASSOC);
+
 ?>
 
 <!DOCTYPE html>

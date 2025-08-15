@@ -90,8 +90,13 @@ if (isset($_POST['simpan'])) {
     }
 }
 
-$queryCategories = mysqli_query($koneksi, "SELECT * FROM categories ORDER BY id DESC");
+$queryCategories = mysqli_query($koneksi, "SELECT * FROM categories  WHERE type='blog' ORDER BY id DESC");
 $rowCategories = mysqli_fetch_all($queryCategories, MYSQLI_ASSOC);
+
+$queryBlogs = mysqli_query($koneksi, "SELECT categories.name, blogs.* FROM blogs 
+JOIN categories ON categories.id = blogs.id_category 
+ORDER BY blogs.id DESC");
+$rowBlogs = mysqli_fetch_assoc($queryBlogs);
 
 
 ?>
@@ -122,13 +127,29 @@ $rowCategories = mysqli_fetch_all($queryCategories, MYSQLI_ASSOC);
                             <input type="text" class="form-control" id="title" name="title" placeholder="Masukkan Judul Anda" value="<?php echo ($id) ? $rowEdit['title'] : '' ?>" required>
                         </div>
                         <div class="mb-3">
-                            <label for="tags" class="form-label">Tags</label>
-                            <input type="text" class="form-control" id="tags" name="tags" placeholder="Tags" value="<?php echo ($id) ? $rowEdit['tags'] : '' ?>" required>
-                        </div>
-                        <div class="mb-3">
                             <label for="content" class="form-label">Content</label>
                             <textarea type="text" class="form-control" id="summernote" name="content" placeholder="Masukkan Content Anda"><?php echo ($id) ? $rowEdit['content'] : '' ?></textarea>
                             <!-- <small>- Isi Content jika ingin mengubah content</small> -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="tags" class="form-label">Tags</label>
+                            <input type="text" class="form-control" id="tags" name="tags" placeholder="Tags"
+                                value="<?php
+                                        if ($id) {
+                                            // Mode edit
+                                            $tagsArray = json_decode($rowEdit['tags'], true);
+                                            $tagValues = [];
+                                            foreach ($tagsArray as $tag) {
+                                                $tagValues[] = htmlspecialchars($tag['value']);
+                                            }
+                                            echo implode(', ', $tagValues);
+                                        } else {
+                                            // Mode tambah
+                                            echo '';
+                                        }
+                                        ?>"
+                                required>
+
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label">Gambar</label>

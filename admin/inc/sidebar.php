@@ -35,18 +35,18 @@
                     </a>
                 </li>
                 <li>
-                    <a href="components-buttons.html">
-                        <i class="bi bi-circle"></i><span>Buttons</span>
+                    <a href="?page=category">
+                        <i class="bi bi-circle"></i><span>Category</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-cards.html">
-                        <i class="bi bi-circle"></i><span>Cards</span>
+                    <a href="?page=card-content">
+                        <i class="bi bi-circle"></i><span>card</span>
                     </a>
                 </li>
                 <li>
-                    <a href="components-carousel.html">
-                        <i class="bi bi-circle"></i><span>Carousel</span>
+                    <a href="?page=portofolio">
+                        <i class="bi bi-circle"></i><span>Portofolio</span>
                     </a>
                 </li>
                 <li>
