@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 14 Agu 2025 pada 02.26
+-- Waktu pembuatan: 15 Agu 2025 pada 04.08
 -- Versi server: 8.4.3
 -- Versi PHP: 8.1.10
 
@@ -69,8 +69,29 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `id_category`, `title`, `content`, `penulis`, `is_active`, `image`, `tags`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Cara menggunakan visual studio code', '<p>Halloo ini adalah tutorial menggunakan aplikasi visual studio code, disini pertama kalian download dulu aplikasinya di browser.</p>', '', 1, '57d251e853aea53b2a7a13caa2918acb.jpg', '#coding #codinglife', '2025-08-14 01:27:57', NULL),
-(2, 2, 'Belajar bisnis bersamanya', '<p>Halo mari kita balajr bisnis bersamaku</p>', 'admin', 1, '64a1204e68651f682121b0154bee8727.jpg', '#bisnisdigital #digitalbisnis #bisnispemula12', '2025-08-14 01:35:51', '2025-08-14 02:05:00');
+(5, 2, 'Cara menghasilkan Uang di usia Muda', '<p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Jika Anda mencoba mempelajari cara menghasilkan uang saat remaja, ada banyak pilihan yang tersedia untuk Anda. Anda tidak akan bisa bekerja a&nbsp;<nobr style=\"text-size-adjust: none;\">waktu penuh</nobr>&nbsp;pekerjaan di kantor atau sebagai profesional terlatih. Tapi, kenapa kamu mau? Ketika tiba saatnya&nbsp;<a href=\"https://www.ecwid.com/id/make-money-online\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">cara menghasilkan uang dengan cepat</a>&nbsp;sebagai remaja, pilihan Anda berbeda dari pekerjaan tradisional. Dan terkadang, itu juga lebih menarik.</p><p style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Tentu saja, beberapa remaja dapat menemukannya&nbsp;<nobr style=\"text-size-adjust: none;\">paruh waktu</nobr>&nbsp;pekerjaan di bisnis lokal. Dan tidak ada yang salah dengan itu. Namun bagi mereka yang mencari cara menghasilkan uang dari rumah saat remaja, ada lebih banyak kemungkinan. Berikut beberapa tip terbaik tentang cara menghasilkan uang dengan mudah saat remaja</p><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Pada usia 13 tahun, Anda mungkin tidak dapat memenuhi syarat untuk beberapa pekerjaan. Sebagian besar negara bagian mempunyai undang-undang sendiri mengenai pekerja anak. Dalam kebanyakan kasus,&nbsp;<a href=\"https://info.com/business/the-legal-working-age-in-each-state/\" target=\"_blank\" rel=\"nofollow noopener\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">usia minimum untuk&nbsp;<nobr style=\"text-size-adjust: none;\">paruh waktu</nobr>&nbsp;pekerjaan</a>&nbsp;adalah 14. Beberapa negara bagian mengizinkan 13 atau&nbsp;<nobr style=\"text-size-adjust: none;\">Usia 12 tahun</nobr>&nbsp;untuk mendapatkan pekerjaan dengan izin orang tua. Namun untuk mempermudahnya, berikut beberapa tip tentang cara menghasilkan uang saat berusia 13 tahun. Dan, itu tidak melibatkan pekerjaan&nbsp;<nobr style=\"text-size-adjust: none;\">paruh waktu</nobr>&nbsp;untuk sebuah bisnis.</p><div name=\"anjing-berjalan\" data-hash=\"anjing-berjalan\" style=\"text-size-adjust: none; font-family: Montserrat, sans-serif;\"></div><h3 style=\"text-size-adjust: none; line-height: 32px; font-weight: 700; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; color: rgb(0, 0, 0); font-size: 24px; font-family: Montserrat, sans-serif; padding-top: 0px; letter-spacing: -0.2px;\"><div class=\"h__anchor\" data-hash=\"undefined\" style=\"text-size-adjust: none;\"></div>Anjing berjalan</h3><p style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Mari kita mulai dengan salah satu opsi paling menyenangkan dalam daftar. Banyak sekali orang yang memelihara anjing, namun tidak semua dari mereka bisa mengajak anjingnya jalan-jalan setiap hari. Untuk membantu anjingnya berolahraga (dan membakar energi), banyak orang akan mempekerjakan orang untuk mengajak anjingnya jalan-jalan.</p><p style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Selain itu, tidak ada kualifikasi nyata untuk menjadi dog walker. Anda hanya perlu menyayangi anjing, dan memastikan mereka pulang dengan selamat setelah berjalan-jalan. Jika Anda seorang pecinta anjing, bekerjalah&nbsp;<nobr style=\"text-size-adjust: none;\">paruh waktu</nobr>&nbsp;sebagai dog walker adalah a&nbsp;<nobr style=\"text-size-adjust: none;\">menang-menang</nobr>&nbsp;situasi. Anda bisa menghabiskan waktu bergaul dengan anjing setiap hari, ditambah sedikit uang ekstra yang masuk ke saku Anda.</p><div name=\"ikuti-survei-online\" data-hash=\"ikuti-survei-online\" style=\"text-size-adjust: none; font-family: Montserrat, sans-serif;\"></div><h3 style=\"text-size-adjust: none; line-height: 32px; font-weight: 700; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; color: rgb(0, 0, 0); font-size: 24px; font-family: Montserrat, sans-serif; padding-top: 16px; letter-spacing: -0.2px;\"><div class=\"h__anchor\" data-hash=\"undefined\" style=\"text-size-adjust: none;\"></div>Ikuti survei online</h3><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Situs web seperti&nbsp;<a href=\"https://www.surveyjunkie.com/\" target=\"_blank\" rel=\"nofollow noopener\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">Survei Junkie</a>&nbsp;membayar pengguna untuk menyelesaikan survei online. Apakah itu terdengar terlalu bagus untuk menjadi kenyataan? Ini bukan! Begini cara kerjanya:</p><p style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Perusahaan dan merek mengandalkan umpan balik konsumen untuk menghasilkan produk terbaik. Namun mendapatkan masukan dari masyarakat umum tidak selalu mudah. Jadi, situs web seperti Survey Junkie membayar orang untuk mengikuti survei tentang jenis produk atau layanan tertentu secara online. Umpan balik dari survei ini membantu perusahaan mengoptimalkan produk mereka. Dan, sebagai imbalannya, orang yang mengikuti survei akan dibayar dalam bentuk kartu hadiah, voucher PayPal, atau lainnya&nbsp;<nobr style=\"text-size-adjust: none;\">dunia nyata</nobr>&nbsp;hadiah.</p><div name=\"membuat-dan-menjual-kerajinan-secara-online\" data-hash=\"membuat-dan-menjual-kerajinan-secara-online\" style=\"text-size-adjust: none; font-family: Montserrat, sans-serif;\"></div><h3 style=\"text-size-adjust: none; line-height: 32px; font-weight: 700; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; color: rgb(0, 0, 0); font-size: 24px; font-family: Montserrat, sans-serif; padding-top: 16px; letter-spacing: -0.2px;\"><div class=\"h__anchor\" data-hash=\"undefined\" style=\"text-size-adjust: none;\"></div>Membuat dan menjual kerajinan secara online</h3><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Jika Anda memiliki minat terhadap seni dan kerajinan, Anda dapat mengubahnya menjadi uang tunai&nbsp;<a href=\"https://www.ecwid.com/id/sell-crafts-online\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">menjual kerajinan Anda secara online</a>. Etsy adalah platform e-niaga yang dirancang untuk kerajinan khusus atau buatan tangan, yang dibuat oleh orang-orang seperti Anda.</p><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Membuat&nbsp;<a href=\"https://www.ecwid.com/id/blog/how-to-sell-on-etsy.html\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">Toko Etsy</a>&nbsp;relatif mudah juga. Gratis untuk membuat toko Anda dan menjadi penjual Etsy. Namun, ada sedikit biaya pendaftaran untuk produk apa pun yang Anda daftarkan di toko Etsy Anda.</p><p style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Oleh karena itu, Anda mungkin memerlukan bantuan orang tua untuk memulai jika ingin berjualan di Etsy.</p><div name=\"jual-barang-cetakan-di-etsy\" data-hash=\"jual-barang-cetakan-di-etsy\" style=\"text-size-adjust: none; font-family: Montserrat, sans-serif;\"></div><h3 style=\"text-size-adjust: none; line-height: 32px; font-weight: 700; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; color: rgb(0, 0, 0); font-size: 24px; font-family: Montserrat, sans-serif; padding-top: 16px; letter-spacing: -0.2px;\"><div class=\"h__anchor\" data-hash=\"undefined\" style=\"text-size-adjust: none;\"></div>Jual barang cetakan di Etsy</h3><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Meskipun Anda tidak memiliki kerajinan tangan untuk dijual, Anda tetap dapat menggunakan Etsy sebagai cara menghasilkan uang.&nbsp;<a href=\"https://www.ecwid.com/id/blog/selling-digital-downloads-on-etsy.html\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">Hasil cetak</a>, seperti agenda harian, pelacak pekerjaan rumah, dan grafik menyenangkan lainnya biasanya ada di antara Etsy&nbsp;<nobr style=\"text-size-adjust: none;\">terlaris</nobr>&nbsp;item. Remaja yang tertarik pada desain grafis dapat mengasah keterampilan mereka sekaligus menghasilkan uang dari barang cetakan.</p><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Lihat Etsy&nbsp;<a href=\"https://www.etsy.com/market/popular_printables\" target=\"_blank\" rel=\"nofollow noopener\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">halaman barang cetakan populer</a>&nbsp;untuk menghasilkan ide-ide baru.</p><div name=\"jual-barang-koleksi-atau-barang-lama-secara-online\" data-hash=\"jual-barang-koleksi-atau-barang-lama-secara-online\" style=\"text-size-adjust: none; font-family: Montserrat, sans-serif;\"></div><h3 style=\"text-size-adjust: none; line-height: 32px; font-weight: 700; margin-right: 0px; margin-bottom: 16px; margin-left: 0px; color: rgb(0, 0, 0); font-size: 24px; font-family: Montserrat, sans-serif; padding-top: 16px; letter-spacing: -0.2px;\"><div class=\"h__anchor\" data-hash=\"undefined\" style=\"text-size-adjust: none;\"></div>Jual barang koleksi atau barang lama secara online</h3><p style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Tip lain tentang cara menghasilkan uang saat remaja secara online adalah dengan menjual barang-barang lama Anda. Barang lama atau tidak terpakai yang masih dalam kondisi baik bisa menjadi nilai lebih bagi Anda jika Anda menjualnya. Pakaian, mainan, dan permainan lama selalu bisa dijadikan rumah yang bagus, dan Anda bisa mendapatkan uang sambil mengosongkan ruang.</p><p class=\"gt-block\" style=\"text-size-adjust: none; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-size-adjust: none; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-variant-position: normal; font-variant-emoji: normal; font-stretch: normal; font-size: 20px; line-height: 32px; font-family: Helvetica, sans-serif; color: rgb(10, 12, 15); margin-right: 0px; margin-bottom: 32px; margin-left: 0px; letter-spacing: -0.1px;\">Meskipun menjual barang lama dapat menghasilkan uang, barang terbaik untuk dijual adalah barang koleksi. Kartu bisbol,&nbsp;<a href=\"https://www.ecwid.com/id/blog/selling-action-figures-online.html\" style=\"text-size-adjust: none; color: rgb(0, 100, 184); cursor: pointer; text-decoration: none; transition: color 0.1s linear;\">tokoh aksi</a>, memorabilia olahraga, dan buku komik adalah beberapa contohnya&nbsp;<nobr style=\"text-size-adjust: none;\">sangat didambakan</nobr>&nbsp;barang koleksi. Mendapatkan barang koleksi mungkin tidak mudah. Namun jika Anda bisa melakukannya, mereka bisa dijual dengan harga lebih banyak dari yang Anda harapkan.</p>', 'admin', 1, '8d526e8e0ee1c62bda95f91d3d657df8.jpg', '[{\"value\":\"cuanmuda\"},{\"value\":\"cuan\"},{\"value\":\"bisnis\"},{\"value\":\"creative\"}]', '2025-08-15 01:37:31', '2025-08-15 01:42:47');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `card_content`
+--
+
+CREATE TABLE `card_content` (
+  `id` int NOT NULL,
+  `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `card_content`
+--
+
+INSERT INTO `card_content` (`id`, `title`, `content`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'Halo guyss', '<p>kalkcxmanckjnacknalcknaxc</p>', '4d5bcd8fbb6ecd3156b3ca88dd17e04d.jpg', '2025-08-14 03:24:08', NULL);
 
 -- --------------------------------------------------------
 
@@ -81,6 +102,7 @@ INSERT INTO `blogs` (`id`, `id_category`, `title`, `content`, `penulis`, `is_act
 CREATE TABLE `categories` (
   `id` int NOT NULL,
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -89,9 +111,12 @@ CREATE TABLE `categories` (
 -- Dumping data untuk tabel `categories`
 --
 
-INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'IT', '2025-08-13 06:50:42', NULL),
-(2, 'Bisnis', '2025-08-13 06:50:42', NULL);
+INSERT INTO `categories` (`id`, `name`, `type`, `created_at`, `updated_at`) VALUES
+(1, 'IT', 'blog', '2025-08-13 06:50:42', '2025-08-15 02:13:07'),
+(2, 'Bisnis', 'blog', '2025-08-13 06:50:42', '2025-08-15 02:13:10'),
+(4, 'App', 'portofolio', '2025-08-15 02:18:00', NULL),
+(5, 'Web', 'portofolio', '2025-08-15 02:18:00', NULL),
+(6, 'card', 'portofolio', '2025-08-15 03:45:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -114,6 +139,38 @@ CREATE TABLE `client` (
 
 INSERT INTO `client` (`id`, `name`, `image`, `is_active`, `created_at`, `updated_at`) VALUES
 (1, 'Kevin Adisurya Nugraha', 'ebcd036a0db50db993ae98ce380f6419.png', 1, '2025-08-13 04:49:41', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `portofolio`
+--
+
+CREATE TABLE `portofolio` (
+  `id` int NOT NULL,
+  `id_category` int NOT NULL,
+  `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `client_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `project_date` date NOT NULL,
+  `project_url` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT '1',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `portofolio`
+--
+
+INSERT INTO `portofolio` (`id`, `id_category`, `title`, `content`, `client_name`, `project_date`, `project_url`, `image`, `is_active`, `created_at`, `updated_at`) VALUES
+(1, 5, 'Membuat Website NiceAdmin FullStack', '<p>Halo ini websiteku</p>', 'Kevin Adisurya Nugraha', '2025-08-15', 'http://localhost/ppkdjp/compro_2025/', 'ee33f9305b1560aba82af5f24bb94a35.png', 1, '2025-08-15 02:41:51', NULL),
+(2, 4, 'Membuat Aplikasi Gojek', '<p>halo ini adalah aplikasi gojek sayang aku buat</p>', 'Reza Kurniawan', '2025-08-16', 'http://localhost/ppkdjp/compro_2025/', 'efc98ce1227737f1af9fa1138cdf55f3.jpg', 1, '2025-08-15 03:44:29', NULL),
+(3, 6, 'card responsive desain', '<p>Halo ini adalah Card dari bootstrap 5</p>', 'Ini adlah card yang dibuat dar Bootstrap', '2025-08-17', 'http://localhost/ppkdjp/compro_2025/', '1c82c06577d3741565a141e11e51f320.jpg', 1, '2025-08-15 03:45:59', NULL),
+(4, 5, 'Web Desain Responsive', '<p>Ini adalah Web desain responsive</p>', 'ini adalah Web Desain Responsive', '2025-08-19', 'http://localhost/ppkdjp/compro_2025/', '5ccd62698e336d34c5c50483e56db114.jpg', 1, '2025-08-15 03:47:40', NULL),
+(5, 4, 'Aplikasi Shoppee ERD', '<p>Ini adalah aplikasi shopee</p>', 'ini adalah Aplikasi Shopee responsive', '2025-08-20', 'http://localhost/ppkdjp/compro_2025/', 'cf1e204737cffe048ab140295fe87bc9.jpg', 1, '2025-08-15 03:48:58', NULL),
+(6, 6, 'Create Image Card', '<p>Ini adlah card yang dibuat dar Bootstrap</p>', 'Ini adlah card yang dibuat dar Bootstrap', '2025-08-20', 'http://localhost/ppkdjp/compro_2025/', '9e609f687842d224a27b72ab6d8ef2d2.jpg', 1, '2025-08-15 03:49:47', NULL);
 
 -- --------------------------------------------------------
 
@@ -206,6 +263,12 @@ ALTER TABLE `blogs`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `card_content`
+--
+ALTER TABLE `card_content`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `categories`
 --
 ALTER TABLE `categories`
@@ -215,6 +278,12 @@ ALTER TABLE `categories`
 -- Indeks untuk tabel `client`
 --
 ALTER TABLE `client`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `portofolio`
+--
+ALTER TABLE `portofolio`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -249,19 +318,31 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT untuk tabel `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT untuk tabel `card_content`
+--
+ALTER TABLE `card_content`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `client`
 --
 ALTER TABLE `client`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `portofolio`
+--
+ALTER TABLE `portofolio`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `settings`
